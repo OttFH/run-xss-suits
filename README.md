@@ -6,6 +6,8 @@ You can find the source code of this website [here](https://github.com/OttFH/xss
 
 ## Usage
 
+The result of the test gets written to the directory ``/logs`` of the container, so you have to mount a host directory to this location to get access to them.
+
 ### DalFox
 
 Repo: https://github.com/hahwul/dalfox
@@ -42,7 +44,7 @@ Build Dockerfile
 and run it
 ``docker run -it -v <result-dir-on-host>:/logs xsser``
 
-### XSSer
+### XSStrike
 
 Repo: https://github.com/s0md3v/XSStrike
 
