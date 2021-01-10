@@ -1,0 +1,11 @@
+http://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=XSS
+http://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=XSS
