@@ -11,3 +11,4 @@ XSpear -u https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?x
 XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234 -o json -v 0 > /logs/XSpear_script_single_quote_text.json
 XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234 -o json -v 0 > /logs/XSpear_script_double_quote_text.json
 XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234 -o json -v 0 > /logs/XSpear_script_backticks_quote_text.json
+XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_filter_single_quote_text.php?xss=234 -o json -v 0 > /logs/XSpear_script_filter_single_quote_text.json
