@@ -1,8 +1,12 @@
 FROM python
 
-RUN git clone https://github.com/s0md3v/XSStrike.git ./app
-WORKDIR ./app
-COPY url_list.txt url_list.txt
+RUN git clone https://github.com/s0md3v/XSStrike.git /app
+WORKDIR /app
 RUN pip install -r requirements.txt
 
-ENTRYPOINT python xsstrike.py --skip --seeds url_list.txt --file-log-level GOOD --log-file /logs/xsstrike.log
+COPY get_url_list.txt get_url_list.txt
+COPY post_url_list.txt post_url_list.txt
+COPY commands.sh /scripts/commands.sh
+RUN ["chmod", "+x", "/scripts/commands.sh"]
+
+ENTRYPOINT ["/scripts/commands.sh"]
