@@ -16,7 +16,7 @@ XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_te
 XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234 -a -o json -v 0 > /logs/XSpear_php_script_double_quote_text.json
 XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234 -a -o json -v 0 > /logs/XSpear_php_script_backticks_quote_text.json
 XSpear -u https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234 -a -o json -v 0 > /logs/XSpear_php_script_json_encode.json
-XSpear -u https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php -a -d "xss=234" -o json -v 0 > /logs/XSpear_php_post_simple_tag.json
+# XSpear -u https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php -a -d "xss=234" -o json -v 0 > /logs/XSpear_php_post_simple_tag.json
 
 # React
 XSpear -u http://react-xss-suite-test-site.herokuapp.com/simpleTag?xss=234 -a -o json -v 0 > /logs/XSpear_react_simple_tag.json
@@ -47,5 +47,4 @@ XSpear -u http://angular-xss-suite-test-site.herokuapp.com/sanitizedValue?xss=23
 XSpear -u http://angular-xss-suite-test-site.herokuapp.com/sanitizedHref?xss=234 -a -o json -v 0 > /logs/XSpear_angular_sanitize_href.json
 XSpear -u http://angular-xss-suite-test-site.herokuapp.com/escapingTag?xss=234 -a -o json -v 0 > /logs/XSpear_angular_escaping_tag.json
 XSpear -u http://angular-xss-suite-test-site.herokuapp.com/escapingValue?xss=234 -a -o json -v 0 > /logs/XSpear_angular_escaping_value.json
-XSpear -u http://angular-xss-suite-test-site.herokuapp.com/escapingComment?xss=234 -a -o json -v 0 > /logs/XSpear_angular_escaping_comment.json
 XSpear -u http://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 -a -o json -v 0 > /logs/XSpear_angular_escaping_onload.json

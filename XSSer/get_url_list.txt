@@ -37,5 +37,4 @@ http://angular-xss-suite-test-site.herokuapp.com/sanitizedValue?xss=XSS
 http://angular-xss-suite-test-site.herokuapp.com/sanitizedHref?xss=XSS
 http://angular-xss-suite-test-site.herokuapp.com/escapingTag?xss=XSS
 http://angular-xss-suite-test-site.herokuapp.com/escapingValue?xss=XSS
-http://angular-xss-suite-test-site.herokuapp.com/escapingComment?xss=XSS
 http://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=XSS
