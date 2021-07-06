@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 
 
 class Testcase:
@@ -17,6 +18,7 @@ class Testcase:
 
 DALFOX = 'dalfox'
 TRAXSS = 'traxss'
+WINGMAN = 'wingman'
 XSPEAR = 'xspear'
 XSSCRAPY = 'xsscrapy'
 XSSER = 'xsser'
@@ -112,7 +114,6 @@ def setFoundByUrl(url, toolName):
         if url in case.url or case.url in url:
             case.setFound(toolName)
             return
-    print('url not found:', url)
 
 
 def setFoundByFileName(fileName, toolName):
@@ -128,7 +129,6 @@ def setFoundByFileName(fileName, toolName):
         if containsAllKeywords:
             case.setFound(toolName)
             return
-    print('filename not found:', fileName)
 
 
 def analyseDalfox(path):
@@ -136,11 +136,11 @@ def analyseDalfox(path):
         if not fileName.endswith('.json'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt') as file:
             text = file.read()
 
         text = text.replace(']', '],').strip(',\n\r')
-        text = '['+text+']'
+        text = '[' + text + ']'
         cases = json.loads(text)
 
         for group in cases:
@@ -154,7 +154,7 @@ def analyseTraxss(path):
         if not fileName.endswith('.json'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt') as file:
             text = file.read()
 
         case = json.loads(text)
@@ -164,12 +164,25 @@ def analyseTraxss(path):
                 setFoundByUrl(result['url'], TRAXSS)
 
 
+def analyseWingman(path):
+    for fileName in os.listdir(path):
+        if not fileName.endswith('.log'):
+            continue
+
+        with open(path + '/' + fileName, 'rt') as file:
+            lines = file.readlines()
+
+        for i in range(len(lines)):
+            if 'Proof-Of-Concepts (PoCs)' in lines[i] and i + 2 < len(lines):
+                setFoundByUrl(lines[i + 1], WINGMAN)
+
+
 def analyseXSpear(path):
     for fileName in os.listdir(path):
         if not fileName.endswith('.json'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt') as file:
             text = file.read()
 
         case = json.loads(text)
@@ -183,7 +196,7 @@ def analyseXsscrapy(path):
         if not fileName.endswith('.log'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt') as file:
             lines = file.readlines()
 
         for line in lines:
@@ -196,7 +209,7 @@ def analyseXsser(path):
         if not fileName.endswith('.log'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt', encoding='utf-8') as file:
             lines = file.readlines()
 
         for line in lines:
@@ -214,7 +227,7 @@ def analyseXssradare(path):
         if not fileName.endswith('.log'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt') as file:
             lines = file.readlines()
 
         for line in lines:
@@ -227,7 +240,7 @@ def analyseXsstrike(path):
         if not fileName.endswith('.log'):
             continue
 
-        with open(path+'/'+fileName, 'rt') as file:
+        with open(path + '/' + fileName, 'rt') as file:
             lines = file.readlines()
 
         for line in lines:
@@ -236,26 +249,29 @@ def analyseXsstrike(path):
 
 
 def printResult():
-    toolNames = [DALFOX, TRAXSS, XSPEAR, XSSCRAPY, XSSER, XSSRADARE, XSSTRIKE]
-    header = 'Testcase,URL'
+    separator = ','
+    if len(sys.argv) > 1:
+        separator = sys.argv[1]
+    toolNames = [DALFOX, TRAXSS, WINGMAN, XSPEAR, XSSCRAPY, XSSER, XSSRADARE, XSSTRIKE]
+    header = 'Testcase' + separator + 'URL'
     for toolName in toolNames:
-        header += ',' + toolName
+        header += separator + toolName
     print(header)
 
     for case in allTestcases:
-        result = case.name + ',' + case.url
+        result = case.name + separator + case.url
         for toolName in toolNames:
-            result += ',' + str(case.getFound(toolName))
-
+            result += separator + str(case.getFound(toolName))
         print(result)
 
 
-analyseDalfox('./logs/dalfox')
-analyseTraxss('./logs/traxss')
-analyseXSpear('./logs/XSpear')
-analyseXsscrapy('./logs/xsscrapy')
-analyseXsser('./logs/xsser')
-analyseXssradare('./logs/xssradare')
-analyseXsstrike('./logs/xsstrike')
+analyseDalfox('./dalfox')
+analyseTraxss('./traxss')
+analyseWingman('./wingman')
+analyseXSpear('./XSpear')
+analyseXsscrapy('./xsscrapy')
+analyseXsser('./xsser')
+analyseXssradare('./xssradare')
+analyseXsstrike('./xsstrike')
 
 printResult()

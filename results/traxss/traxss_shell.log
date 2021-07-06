@@ -1,0 +1,66 @@
+[34m[22m ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄       ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌     ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌ ▐░▌   ▐░▌ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ 
+     ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌  ▐░▌ ▐░▌  ▐░▌          ▐░▌          
+     ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌   ▐░▐░▌   ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ 
+     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌    ▐░▌    ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+     ▐░▌     ▐░█▀▀▀▀█░█▀▀ ▐░█▀▀▀▀▀▀▀█░▌   ▐░▌░▌    ▀▀▀▀▀▀▀▀▀█░▌ ▀▀▀▀▀▀▀▀▀█░▌
+     ▐░▌     ▐░▌     ▐░▌  ▐░▌       ▐░▌  ▐░▌ ▐░▌            ▐░▌          ▐░▌
+     ▐░▌     ▐░▌      ▐░▌ ▐░▌       ▐░▌ ▐░▌   ▐░▌  ▄▄▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄█░▌
+     ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌     ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+      ▀       ▀         ▀  ▀         ▀  ▀       ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+       Version: 1.1 | Created by @maxbridgland | github.com/M4cs/Traxss[39m[22m
+
+Welcome To Traxss - A URL XSS Scanner
+
+    [1] Scan URL (Full w/ HTML Scan)
+
+    [2] Scan URL (Fast w/ HTML Scan)
+
+    [3] Scan URL (Full w/o HTML Scan)
+
+    [4] Scan URL (Fast w/o HTML Scan)
+    
+    [5] Exit Program
+
+[34m[22m[[39m[22m[37m[22mtraxss[39m[22m[34m[22m][39m[22m> 
+Please Enter URL To Scan w/ Parameters Included
+[32m[22m[ex.][39m[22m https://xss-game.appspot.com/level1/frame?query=test
+
+[34m[22m[[39m[22m[37m[22mtraxss[39m[22m[34m[22m][39m[22m> 
+Would You Like To Add A Cookie String?
+
+[Y\n]> 
+Would you like to stop after the first vulnerability found?
+
+[Y\n]> 
+Would you like to store results to a JSON file?
+
+[Y\n]> 
+Please Enter The File Name Below
+
+[34m[22m[[39m[22m[37m[22mtraxss[39m[22m[34m[22m][39m[22m> [31m[22m[*] This may take a while. Press ENTER to continue or Ctrl-C to quit. [*][39m[22m
+
+[34m[22m[*] Running XSS Scan [*][39m[22m
+Traceback (most recent call last):
+  File "traxss.py", line 6, in <module>
+    menu.start()
+  File "/app/traxss/core/menu.py", line 209, in start
+    scanner.run_on_url()
+  File "/app/traxss/core/scanner.py", line 128, in run_on_url
+    self.driver = webdriver.Chrome(chrome_options=options)
+  File "/usr/local/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "/usr/local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/usr/local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+
+[0m
