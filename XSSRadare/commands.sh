@@ -34,7 +34,7 @@ python3 XSSRadare.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingTa
 python3 XSSRadare.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingValue?xss=234 --full --stop > /logs/xssradare_vue_escapingValue.log
 python3 XSSRadare.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingComment?xss=234 --full --stop > /logs/xssradare_vue_escapingComment.log
 python3 XSSRadare.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingHref?xss=234 --full --stop > /logs/xssradare_vue_escapingHref.log
-python3 XSSRadare.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 --full --stop > /logs/xssradare_vue_escapingOnLoad.log
+python3 XSSRadare.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 --full --stop > /logs/xssradare_vue_escapingOnload.log
 
 
 python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/simpleTag?xss=234 --full --stop > /logs/xssradare_angular_simpleTag.log
@@ -45,4 +45,4 @@ python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/saniti
 python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/sanitizedHref?xss=234 --full --stop > /logs/xssradare_angular_sanitizedHref.log
 python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingTag?xss=234 --full --stop > /logs/xssradare_angular_escapingTag.log
 python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingValue?xss=234 --full --stop > /logs/xssradare_angular_escapingValue.log
-python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 --full --stop > /logs/xssradare_angular_escapingOnLoad.log
+python3 XSSRadare.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 --full --stop > /logs/xssradare_angular_escapingOnload.log

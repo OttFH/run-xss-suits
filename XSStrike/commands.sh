@@ -34,7 +34,7 @@ echo 'N\n' | python xsstrike.py -u https://vue-xss-suite-test-site.herokuapp.com
 echo 'N\n' | python xsstrike.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingValue?xss=234 > /logs/xsstrike_vue_escapingValue.log
 echo 'N\n' | python xsstrike.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingComment?xss=234 > /logs/xsstrike_vue_escapingComment.log
 echo 'N\n' | python xsstrike.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingHref?xss=234 > /logs/xsstrike_vue_escapingHref.log
-echo 'N\n' | python xsstrike.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 > /logs/xsstrike_vue_escapingOnLoad.log
+echo 'N\n' | python xsstrike.py -u https://vue-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 > /logs/xsstrike_vue_escapingOnload.log
 
 
 echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp.com/simpleTag?xss=234 > /logs/xsstrike_angular_simpleTag.log
@@ -45,4 +45,4 @@ echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp
 echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp.com/sanitizedHref?xss=234 > /logs/xsstrike_angular_sanitizedHref.log
 echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingTag?xss=234 > /logs/xsstrike_angular_escapingTag.log
 echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingValue?xss=234 > /logs/xsstrike_angular_escapingValue.log
-echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 > /logs/xsstrike_angular_escapingOnLoad.log
+echo 'N\n' | python xsstrike.py -u https://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=234 > /logs/xsstrike_angular_escapingOnload.log

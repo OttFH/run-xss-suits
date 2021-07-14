@@ -46,4 +46,4 @@ python3 xsser -u http://angular-xss-suite-test-site.herokuapp.com/sanitizedValue
 python3 xsser -u http://angular-xss-suite-test-site.herokuapp.com/sanitizedHref?xss=XSS --auto --reverse-check > /logs/xsser/xsser_angular_sanitize_href.log
 python3 xsser -u http://angular-xss-suite-test-site.herokuapp.com/escapingTag?xss=XSS --auto --reverse-check > /logs/xsser/xsser_angular_escaping_tag.log
 python3 xsser -u http://angular-xss-suite-test-site.herokuapp.com/escapingValue?xss=XSS --auto --reverse-check > /logs/xsser/xsser_angular_escaping_value.log
-python3 xsser -u http://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=XSS --auto --reverse-check > /logs/xsser/xsser_angular_escaping_onload.log.log
+python3 xsser -u http://angular-xss-suite-test-site.herokuapp.com/escapingOnload?xss=XSS --auto --reverse-check > /logs/xsser/xsser_angular_escaping_onload.log
