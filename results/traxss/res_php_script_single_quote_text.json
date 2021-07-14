@@ -1,9 +1,0 @@
-{
-    "results": [
-        {
-            "count": 1,
-            "payload": "xss=%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E%0A",
-            "url": "https://xss-suite-test-site.herokuapp.com/pages/script_single_quote_text.php"
-        }
-    ]
-}

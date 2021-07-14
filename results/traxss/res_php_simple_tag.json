@@ -4,11 +4,6 @@
             "count": 1,
             "payload": "xss=%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E%0A",
             "url": "https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php?xss=%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E%0A"
-        },
-        {
-            "count": 2,
-            "payload": "xss=%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E%0A",
-            "url": "https://xss-suite-test-site.herokuapp.com/pages/simple_tag.php"
         }
     ]
 }

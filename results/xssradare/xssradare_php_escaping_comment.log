@@ -1,0 +1,10 @@
+
+ __  _____ ___ ___         _              
+ \ \/ / __/ __| _ \__ _ __| |__ _ _ _ ___
+  >  <\__ \__ \   / _` / _` / _` | '_/ -_)
+ /_/\_\___/___/_|_\__,_\__,_\__,_|_| \___|
+
+[+] XSSRadare Start working at : Sun Jul 11 12:17:24 2021
+
+Using payloads from file 666_lines_of_XSS_vectors.txt
+[34m[+] Scan finished , number of found XSS : 0 [0m

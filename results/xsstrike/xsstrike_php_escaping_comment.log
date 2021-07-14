@@ -1,0 +1,10 @@
+
+	XSStrike v3.1.4
+
+ Checking for DOM vulnerabilities 
+ WAF Status: Offline 
+ Testing parameter: xss 
+ Reflections found: 1 
+ Analysing reflections 
+ Generating payloads 
+ No vectors were crafted. 
